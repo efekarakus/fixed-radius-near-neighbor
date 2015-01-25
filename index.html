@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Fixed Radius Near Neighbor Algorithm</title>
+        <link rel="stylesheet" type="text/css" href="./static/main.css">
+        <script type="text/javascript">
+    	    var _gaq = _gaq || [];
+    	    _gaq.push(['_setAccount', 'UA-17572263-1']);
+    	    _gaq.push(['_trackPageview']);
+
+   		    (function() {
+        	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    	    })();
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <a href="http://efekarakus.com">Efe Karakus</a>
+            <a class="right" href="https://github.com/efekarakus/efe-karakus-website/blob/master/static/js/fixed-radius-near-neighbor/algorithm.js">code&raquo;</a>
+        </div>
+        <div class="writing">
+            <h1>Fixed-Radius Near Neighbor Algorithm</h1>
+            <div class="nav">
+                <div id="definition" class="subnav active">1</div>
+                <div id="bucket" class="subnav">2</div>
+                <div id="search" class="subnav">3</div>
+                <div id="repeat" class="subnav">4</div>
+                <div id="end" class="subnav">5</div>
+            </div>
+            <div class="explanation"></div>
+        </div>
+        <div class="vis">
+            <div class="box"></div>
+            <div class="legend"></div>
+        </div>
+        <div class="writing">
+            <div class="details">
+                <p>
+                    The fixed-radius near neighbor is a <i>O(n + k)</i> algorithm, where <i>k</i> is the number of pairs to get reported.
+                    Note that if <i>k < n<sup>2</sup></i> then this algorithm should perform better than the naive <i>O(n<sup>2</sup>)</i> approach.
+                </p>
+                <p>
+                    Further Reading:
+                    <ul>
+                        <li><a href="http://www.sciencedirect.com/science/article/pii/0020019077900709">"The complexity of finding fixed-radius near neighbors"</a> 
+                            by JL Bentley, DF Stanat, and EH Williams</li>
+                        <li>Lecture 1 of <a href="http://www.cs.umd.edu/~mount/754/Lects/754lects.pdf">Computational Geometry</a> by D Mount for the proof of the runtime and a more intuitive read</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    <script src="./js/jquery-1.8.2.min.js"></script>
+    <script src="./js/d3.v3.min.js" charset="utf-8"></script>
+    <script src="./js/algorithm.js"></script>
+    <script src="./js/draw.js"></script>
+    <script src="./js/main.js"></script>
+    </body>
+</html>

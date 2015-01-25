@@ -1,0 +1,162 @@
+body {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 12px;
+}
+
+.header {
+	margin: 0 auto;
+	height: 20px;
+	width: 700px;
+	border-bottom: 1px solid #e2e2e2;
+}
+
+.header a {
+	display: inline-block;
+	font-size: 12px;
+	color: #328CBC;
+	font-style: italic;
+	text-decoration: none;
+}
+
+.header a.right {
+	display: inline-block;
+	float: right;
+}
+
+.header a:hover {
+	text-decoration: underline;
+}
+
+.writing {
+	margin: 0 auto;
+	width: 700px;
+}
+
+.writing a {
+	color: #328CBC;
+	text-decoration: none;
+}
+
+.writing a:hover {
+	text-decoration: underline;
+}
+
+.writing h1 {
+	text-align: center;
+	font-size: 40px;
+	font-weight: 800;
+}
+
+.writing .nav {
+	margin-top: 10px
+	display: block;
+	margin-bottom: 10px;
+	text-align: center;
+	width: 100%;
+}
+
+.writing .subnav {
+	display: inline-block;
+	margin-right: 5px;
+	margin-left: 5px;
+	width: 40px;
+	height: 35px;
+	font-size: 20px;
+	line-height: 35px;
+	text-align: center;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	background-color: #e2e2e2;
+	color: #fff;
+	cursor: pointer;
+}
+
+.writing .subnav:hover {
+	background-color: #328CBC;
+	border: 1px solid #777;
+}
+
+.writing .subnav.active {
+	background-color: #328CBC;
+	border: 1px solid #777;
+}
+
+.writing .explanation {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	height: 100px;
+	width: 100%;
+}
+
+span.cbucket {
+	font-style: italic;
+	color: #4682B8;
+}
+
+span.fbucket {
+	color: #59CFCB;
+}
+
+.vis {
+	margin: 0 auto;
+	display: block;
+	width: 800; /* Make an svg of width 700 and height 525, use r = 175 */
+	height: 545;
+}
+
+.box {
+	display: inline-block;
+}
+
+.legend {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+rect.bound-box {
+	stroke: #e2e2e2;
+	stroke-width: 1;
+	fill: none;
+}
+
+circle.point {
+	fill: #A0A0A0;
+	stroke: black;
+	stroke-width: 1;
+}
+
+line.r {
+	stroke: #CB15B7;
+	stroke-width: 5;
+}
+
+line.bucket {
+	stroke: #777;
+	stroke-width: 1;
+}
+
+rect.bucket {
+	fill: none;
+}
+
+rect.bucket.c {
+	fill: #328CBC;
+	fill-opacity: 0.2;
+}
+
+rect.bucket.f {
+	fill: #04B0BD;
+	fill-opacity: 0.2;
+}
+
+text.r {
+	stroke: #CB15B7;
+}
+
+.writing .details {
+	font-size: 15px;
+	margin-top: 20px;
+	margin-bottom: 80px;
+}
